@@ -1,18 +1,18 @@
-import type { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}", // Include all files in the `src` directory
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#ff8700", // McLaren orange
+        secondary: "#e06d00", // Darker orange for hover states
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
