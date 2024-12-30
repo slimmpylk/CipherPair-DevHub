@@ -33,12 +33,6 @@ This website is designed to highlight the skills and projects of two creative mi
 2. **Contact Forms**: A simple way for recruiters and clients to get in touch.
 3. **Animations**: Subtle effects to make the browsing experience more engaging.
 4. **Deployment**: Launching on a custom domain!
+5. **RestApis**
 
 ---
-
-## **Installation (For Developers)**
-
-If you’d like to contribute or test the site locally:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/SyntaxSiblings-DevHub.git
