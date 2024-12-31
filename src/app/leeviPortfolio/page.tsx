@@ -1,4 +1,4 @@
-import HeroSection from '@/components/leeviPortfolio/HeroSection';
+import HeroSection from '@/components/leeviPortfolio/HeroSection1';
 import AboutSection from '@/components/leeviPortfolio/AboutSection';
 import SkillsSection from '@/components/leeviPortfolio/SkillsSection';
 import PortfolioSection from '@/components/leeviPortfolio/PortfolioSection';

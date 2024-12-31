@@ -4,7 +4,7 @@ import DynamicText from "@/components/common/DynamicText";
 export default function HeroSection() {
     return (
         <header
-            className=" bg-gray-600
+            className=" hero-background
                     min-h-screen    // or h-screen if you want full viewport
                     flex
                     flex-col
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <Image
                     src="/photos/Samuli.jpg"
                     alt="Profile Picture"
-                    className="rounded-full border-4 border-orange-500 shadow-lg mb-8"
+                    className="rounded-full border-4 border-orange-500 shadow-lg mb-8 content-center"
                     width={150}
                     height={150}
                 />

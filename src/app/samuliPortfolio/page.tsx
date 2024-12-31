@@ -1,10 +1,12 @@
-import HeroSection from '@/components/leeviPortfolio/HeroSection';
-import AboutSection from '@/components/leeviPortfolio/AboutSection';
-import SkillsSection from '@/components/leeviPortfolio/SkillsSection';
-import PortfolioSection from '@/components/leeviPortfolio/PortfolioSection';
-import ExperienceSection from '@/components/leeviPortfolio/ExperienceSection';
-import EducationSection from '@/components/leeviPortfolio/EducationSection';
-import FooterSection from '@/components/leeviPortfolio/FooterSection';
+import HeroSection from '@/components/samuliPortfolio/HeroSection';
+import AboutSection from '@/components/samuliPortfolio/AboutSection';
+import SkillsSection from '@/components/samuliPortfolio/SkillsSection';
+import PortfolioSection from '@/components/samuliPortfolio/PortfolioSection';
+import ExperienceSection from '@/components/samuliPortfolio/ExperienceSection';
+import EducationSection from '@/components/samuliPortfolio/EducationSection';
+import FooterSection from '@/components/samuliPortfolio/FooterSection';
+import StravaStats from '@/components/samuliPortfolio/StravaStats';
+
 
 
 
@@ -16,6 +18,7 @@ export default function PortfolioPage() {
             <AboutSection />
             <SkillsSection />
             <PortfolioSection />
+            <StravaStats /> {/* Strava stats component */}
             <ExperienceSection />
             <EducationSection />
             <FooterSection />

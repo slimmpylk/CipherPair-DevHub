@@ -22,9 +22,9 @@ export default function HeroSection() {
                     />
                     <h2 className="text-2xl font-bold mt-4">Samuli Pylkkönen (CEO)</h2>
                     <p className="text-gray-300 mt-2">Junior Developer & Cybersecurity Enthusiast</p>
-                    <Link href="/leeviPortfolio">
+                    <Link href="/samuliPortfolio">
                         <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                            Samuli's Portfolio
+                            Samuli&apos;s Portfolio
                         </button>
                     </Link>
                 </div>
@@ -38,11 +38,11 @@ export default function HeroSection() {
                         width={150}
                         height={150}
                     />
-                    <h2 className="text-2xl font-bold mt-4">[Friend's Name]</h2>
+                    <h2 className="text-2xl font-bold mt-4">[Friend&apos;s Name]</h2>
                     <p className="text-gray-300 mt-2">Frontend Developer & Designer</p>
                     <Link href="/leeviPortfolio">
                         <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                            Friend's Portfolio
+                            Friend&apos;s Portfolio
                         </button>
                     </Link>
                 </div>

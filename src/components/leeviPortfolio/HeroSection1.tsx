@@ -1,10 +1,10 @@
 import Image from "next/image";
 import DynamicText from "@/components/common/DynamicText";
 
-export default function HeroSection() {
+export default function HeroSection1() {
     return (
         <header
-            className=" bg-gray-600
+            className="
                     min-h-screen    // or h-screen if you want full viewport
                     flex
                     flex-col
