@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DynamicText from "@/components/common/DynamicText";
+import DynamicText from "@/components/samuliPortfolio/DynamicText";
 
 export default function HeroSection1() {
     return (

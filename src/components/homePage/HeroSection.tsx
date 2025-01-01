@@ -38,13 +38,13 @@ export default function HeroSection() {
                         width={150}
                         height={150}
                     />
-                    <h2 className="text-2xl font-bold mt-4">[Friend&apos;s Name]</h2>
-                    <p className="text-gray-300 mt-2">Frontend Developer & Designer</p>
-                    <Link href="/leeviPortfolio">
-                        <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                            Friend&apos;s Portfolio
-                        </button>
-                    </Link>
+                    <h2 className="text-2xl font-bold mt-4">[Friends portfolio]</h2>
+                    <p className="text-gray-300 mt-2">Under Construction.</p>
+                    {/*<Link href="/leeviPortfolio">*/}
+                    {/*    <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">*/}
+                    {/*        Friend&apos;s Portfolio*/}
+                    {/*    </button>*/}
+                    {/*</Link>*/}
                 </div>
             </div>
         </header>

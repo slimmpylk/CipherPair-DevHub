@@ -63,7 +63,7 @@ const StravaStats: React.FC = () => {
     return (
         <section id="strava-stats" className="bg-black py-10">
             <div className="container mx-auto">
-                <h2 className="text-2xl font-bold text-orange-500 text-center mb-8">RestApi</h2>
+                <h2 className="text-2xl font-bold text-orange-500 text-center mb-8">Strava RestApi</h2>
                 <div className="flex flex-col md:flex-row md:gap-6 justify-center">
                     {/* Card for Latest Workout */}
                     <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md flex-1">

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "@/styles/DynamicText.module.css";
 
-const texts: string[] = ["Embedded Device Programmer", "Ultra Runner", "Ethical Hacker"];
+const texts: string[] = ["Programmer (junior)", "Ultra Runner", "Ethical Hacker (junior)", "SOC analyst (junior)"];
 
 export default function DynamicText() {
     const [currentText, setCurrentText] = useState<string>(texts[0]);
