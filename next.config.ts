@@ -2,11 +2,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    output: "export",             // for static export
+    output: "export",
+    trailingSlash: true,  // fixes problem creating index.html to out/ files
     images: {
-        unoptimized: true,         // disable image optimization
+        unoptimized: true,  // disabling image optimization for static websites
     },
-    // other config if needed
 };
 
 export default nextConfig;
