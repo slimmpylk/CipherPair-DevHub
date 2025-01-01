@@ -5,7 +5,7 @@ export default function AboutSection() {
                 <h2 className="title text-2xl sm:text-3xl font-bold mb-8">About Me</h2>
                 <div className="max-w-3xl mx-auto">
                     <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-10">
-                        Hello! I'm leevi, an ultra-runner, junior embedded device programmer, and aspiring cybersecurity specialist from Finland.
+                        Hello! I&#39;m leevi, an ultra-runner, junior embedded device programmer, and aspiring cybersecurity specialist from Finland.
                     </p>
                     <p className="text-sm sm:text-base lg:text-lg leading-relaxed mb-10">
                         In my free time, I love pushing my limits through running—it’s the perfect way to balance out all the sitting and screen time.
@@ -13,7 +13,7 @@ export default function AboutSection() {
                         with my academic studies and has grown through personal projects that challenge and inspire me.
                     </p>
                     <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-                        What drives me even further is my passion for ethical hacking. I'm currently immersing myself in this dynamic field, eager to master
+                        What drives me even further is my passion for ethical hacking. I&#39;m currently immersing myself in this dynamic field, eager to master
                         its intricacies while continuously advancing my technical expertise.
                     </p>
                 </div>
