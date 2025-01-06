@@ -10,6 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       # 1) Check out your repo (if you need the code in subsequent steps)
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -29,6 +30,19 @@ jobs:
           ssh -v -o StrictHostKeyChecking=no -i /home/runner/.ssh/id_rsa root@164.92.218.59 "echo 'SSH connection successful'; exit"
 
       # 4) Use appleboy/ssh-action to run the deployment commands on the server
+=======
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Prepare SSH key
+        run: |
+          echo "${{ secrets.DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+          ls -la /home/runner/.ssh  # just to confirm the key is there (don't cat it!)
+
+
+>>>>>>> origin/main
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.3
         with:
