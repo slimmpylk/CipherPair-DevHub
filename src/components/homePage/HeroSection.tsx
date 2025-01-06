@@ -6,7 +6,7 @@ export default function HeroSection() {
         <header className="bg-black text-white min-h-screen flex flex-col items-center justify-center py-16">
             {/* Title in the Middle */}
             <h1 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 bg-clip-text text-transparent mb-12 text-center">
-                CipherPair TEST1
+                CipherPair TEST1465
             </h1>
 
             {/* Main Section */}
