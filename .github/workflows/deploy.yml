@@ -1,0 +1,26 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.3
+        with:
+          host: 164.92.218.59
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
+            cd /var/www/my-website
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart my-website

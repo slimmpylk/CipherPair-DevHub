@@ -23,7 +23,7 @@ export default function HeroSection() {
       leading-[1.25]
     "
                 >
-                    Slimmpylk&apos;s Site
+                    Slimmpylk&apos;s Portfolio
                 </h1>
 
                 {/* This wrapper holds your image and dynamic text */}

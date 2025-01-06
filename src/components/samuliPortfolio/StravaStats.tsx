@@ -76,7 +76,7 @@ const StravaStats = async () => {
                 <div className="flex flex-col md:flex-row md:gap-6 justify-center">
                     {/* Latest Workout Card */}
                     <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md flex-1">
-                        <h3 className="text-xl font-semibold text-orange-500">Latest Workout</h3>
+                        <div> <h3 className="text-xl font-semibold text-orange-500">Latest Workout:</h3> <p>{latestWorkout.date}</p></div>
                         <p className="text-white mt-2">
                             <strong>Name:</strong> {latestWorkout.name}
                         </p>
