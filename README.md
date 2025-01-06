@@ -1,8 +1,8 @@
-# [SyntaxSiblings](http://slimmpylk.com)
+# [CipherPair](http://cipherpair.com)
 
-# **SyntaxSiblings-DevHub**
+# **CipherPair-DevHub**
 
-🚀 Welcome to **SyntaxSiblings-DevHub** – a collaborative portfolio platform for developers with a unique, modern twist! This is a HOMEMADE project is a work-in-progress and will evolve into something extraordinary.
+🚀 Welcome to **CipherPair-DevHub** – a collaborative portfolio platform for developers with a unique, modern twist! This is a HOMEMADE project is a work-in-progress and will evolve into something extraordinary.
 
 ---
 
