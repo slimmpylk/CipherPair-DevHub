@@ -2,21 +2,39 @@ name: Deploy to Server
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  # OR optionally allow manual runs too:
+  # workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1) Check out your repo (if you need the code in subsequent steps)
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # 2) Create ~/.ssh, write your private key there, and verify the file
+      - name: Prepare SSH key
+        run: |
+          mkdir -p /home/runner/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+          echo "Contents of /home/runner/.ssh:"
+          ls -la /home/runner/.ssh
+
+      # 3) Test connectivity with a raw ssh command (shows -v logs)
+      - name: Test SSH connectivity
+        run: |
+          ssh -v -o StrictHostKeyChecking=no -i /home/runner/.ssh/id_rsa root@164.92.218.59 "echo 'SSH connection successful'; exit"
+
+      # 4) Use appleboy/ssh-action to run the deployment commands on the server
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.3
         with:
           host: 164.92.218.59
           username: root
+          # We'll reuse the same private key from GitHub Secrets
           key: ${{ secrets.DEPLOY_KEY }}
           debug: true
           script: |
@@ -25,4 +43,3 @@ jobs:
             npm install
             npm run build
             pm2 restart my-website
-          
