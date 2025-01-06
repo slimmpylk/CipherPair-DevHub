@@ -1,8 +1,8 @@
 # [CipherPair](http://cipherpair.com)
 
-# **CiphairPair-DevHub**
+# **CipherPair-DevHub**
 
-🚀 Welcome to **CiphairPair-DevHub** – a collaborative portfolio platform for developers with a unique, modern twist! This is a HOMEMADE project is a work-in-progress and will evolve into something extraordinary.
+🚀 Welcome to **CipherPair-DevHub** – a collaborative portfolio platform for developers with a unique, modern twist! This is a HOMEMADE project is a work-in-progress and will evolve into something extraordinary.
 
 ---
 
