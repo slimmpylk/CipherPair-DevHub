@@ -30,12 +30,11 @@ jobs:
 
       # 4) Use appleboy/ssh-action to run the deployment commands on the server
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@v0.1.3
+        uses: appleboy/ssh-action@v0.1.6  # or latest
         with:
           host: 164.92.218.59
           username: root
-          # We'll reuse the same private key from GitHub Secrets
-          key_path: /home/runner/.ssh/id_rsa
+          key: ${{ secrets.DEPLOY_KEY }}   # <--- Pass the private key as a string
           debug: true
           script: |
             cd /var/www/my-website
@@ -43,3 +42,4 @@ jobs:
             npm install
             npm run build
             pm2 restart my-website
+      
