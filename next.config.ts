@@ -1,11 +1,10 @@
-// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    output: "export",
-    trailingSlash: true,  // fixes problem creating index.html to out/ files
+    reactStrictMode: true,
+    trailingSlash: false,
     images: {
-        unoptimized: true,  // disabling image optimization for static websites
+        unoptimized: false, // Enable dynamic image optimization
     },
 };
 
