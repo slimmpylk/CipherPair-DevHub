@@ -3,47 +3,26 @@ name: Deploy to Server
 on:
   push:
     branches: [main]
-  # OR optionally allow manual runs too:
-  # workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1) Check out your repo (if you need the code in subsequent steps)
-      - name: Checkout Code
+      # 1) Check out the code if needed
+      - name: Check out code
         uses: actions/checkout@v3
 
-      # 2) Create ~/.ssh, write your private key there, and verify the file
-      - name: Prepare SSH key
-        run: |
-          mkdir -p /home/runner/.ssh
-          echo "${{ secrets.DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
-          chmod 600 /home/runner/.ssh/id_rsa
-          echo "Contents of /home/runner/.ssh:"
-          ls -la /home/runner/.ssh
-
-      # 3) Test connectivity with a raw ssh command (shows -v logs)
-      - name: Test SSH connectivity
-        run: |
-          ssh -v -o StrictHostKeyChecking=no -i /home/runner/.ssh/id_rsa root@164.92.218.59 "echo 'SSH connection successful'; exit"
-
-      # 4) Use appleboy/ssh-action to run the deployment commands on the server
+      # 2) Deploy to your server with appleboy/ssh-action
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@v0.1.6  # or latest
+        uses: appleboy/ssh-action@v0.1.6
         with:
-          host: 164.92.218.59
-          username: root
-          key: ${{ secrets.DEPLOY_KEY }}   # <--- Pass the private key as a string
-
-          # We'll reuse the same private key from GitHub Secrets
-          key_path: /home/runner/.ssh/id_rsa
-
-          debug: true
+          host: 164.92.218.59           # Your server’s IP or hostname
+          username: root               # The user to SSH as
+          key: ${{ secrets.DEPLOY_KEY }}  # Your private key stored in GitHub Secrets
+          # For minimal logs, omit `debug: true`
           script: |
             cd /var/www/my-website
             git pull origin main
             npm install
             npm run build
             pm2 restart my-website
-      
