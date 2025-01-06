@@ -35,7 +35,7 @@ jobs:
           host: 164.92.218.59
           username: root
           # We'll reuse the same private key from GitHub Secrets
-          key: ${{ secrets.DEPLOY_KEY }}
+          key_path: /home/runner/.ssh/id_rsa
           debug: true
           script: |
             cd /var/www/my-website
