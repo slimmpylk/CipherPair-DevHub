@@ -18,10 +18,11 @@ jobs:
           host: 164.92.218.59
           username: root
           key: ${{ secrets.DEPLOY_KEY }}
+          debug: true
           script: |
             cd /var/www/my-website
             git pull origin main
             npm install
             npm run build
             pm2 restart my-website
-          debug: true
+          
