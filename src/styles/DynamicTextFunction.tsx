@@ -3,9 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "@/styles/DynamicText.module.css";
 
-const texts: string[] = ["Programmer (junior)", "Ultra Runner", "Ethical Hacker (junior)", "SOC analyst (junior)"];
+interface DynamicTextProps {
+    texts: string[];
+}
 
-export default function DynamicText() {
+export default function DynamicTextFunction({ texts }: DynamicTextProps) {
     const [currentText, setCurrentText] = useState<string>(texts[0]);
     const indexRef = useRef<number>(0);
     const dynamicTextRef = useRef<HTMLParagraphElement | null>(null);
@@ -31,7 +33,7 @@ export default function DynamicText() {
 
         const interval = setInterval(changeText, 2000);
         return () => clearInterval(interval);
-    }, []);
+    }, [texts]);
 
     return (
         <p ref={dynamicTextRef} className="text-lg sm:text-xl text-orange-500 mt-2">

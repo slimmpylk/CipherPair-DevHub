@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DynamicText from "@/components/samuliPortfolio/DynamicText";
+import DynamicText from "@/components/leeviPortfolio/DynamicTextForLeevi";
 
 export default function HeroSection1() {
     return (
@@ -23,7 +23,7 @@ export default function HeroSection1() {
             leading-[1.25]  /* or leading-relaxed, etc. */
           "
                 >
-                    Slimmpylk&apos;s Site
+                    leevi&apos;s Site
                 </h1>
                 <Image
                     src="/photos/Samuli.jpg"
