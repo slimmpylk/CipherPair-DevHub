@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DynamicText from "@/components/samuliPortfolio/DynamicText";
+import DynamicText from "@/components/samuliPortfolio/DynamicTextForSamuli";
 
 export default function HeroSection() {
     return (
@@ -23,7 +23,7 @@ export default function HeroSection() {
       leading-[1.25]
     "
                 >
-                    Slimmpylk&apos;s Portfolio
+                    Samuli&apos;s Portfolio
                 </h1>
 
                 {/* This wrapper holds your image and dynamic text */}
