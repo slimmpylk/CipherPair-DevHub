@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HeroSection() {
     return (
-        <header className="bg-black text-white min-h-screen flex flex-col items-center justify-center py-16">
+        <header className="hero-background text-white min-h-screen flex flex-col items-center justify-center py-16">
             {/* Title in the Middle */}
             <h1 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 bg-clip-text text-transparent mb-12 text-center">
                 CipherPair
@@ -40,11 +40,19 @@ export default function HeroSection() {
                     />
                     <h2 className="text-2xl font-bold mt-4">[Friends portfolio]</h2>
                     <p className="text-gray-300 mt-2">Under Construction.</p>
+<<<<<<< HEAD
                     <Link href="/leeviPortfolio">
                         <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
                             Friend&apos;s Portfolio
                        </button>
                     </Link>
+=======
+                    {/*<Link href="/leeviPortfolio">*/}
+                    {/*   <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">*/}
+                    {/*       Friend&apos;s Portfolio*/}
+                    {/*    </button>*/}
+                    {/*</Link>*/}
+>>>>>>> Testing
                 </div>
             </div>
         </header>

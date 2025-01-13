@@ -48,6 +48,28 @@ export default function PortfolioSection() {
                             </a>
                         </div>
                     </div>
+
+                    <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md">
+                        <video
+                            className="w-full h-48 rounded-lg object-contain"
+                            controls
+                            src="/videos/CrackingWifiPass.mp4"
+                        />
+                        <div className="mt-4">
+                            <h3 className="text-xl font-semibold text-orange-500">Wifi Hacking</h3>
+                            <p className="text-white mt-2">
+                                Cracking WiFi password using Alfa AWUS1900 + Kali (home network).
+                            </p>
+                            <a
+                                href="https://github.com/slimmpylk/Wi-Fi_Password_Cracking"
+                                className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                More detailed on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

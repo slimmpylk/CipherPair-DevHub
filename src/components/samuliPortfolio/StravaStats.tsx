@@ -108,6 +108,14 @@ const StravaStats = async () => {
                         <p className="text-white">
                             <strong>Total Elevation Gain:</strong> {weeklySummary.totalElevationGain}
                         </p>
+                        <a
+                            href="https://github.com/slimmpylk/strava-rest-api"
+                            className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Link to GitHub
+                        </a>
                     </div>
                 </div>
             </div>
