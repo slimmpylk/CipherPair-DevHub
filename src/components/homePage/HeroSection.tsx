@@ -16,7 +16,7 @@ export default function HeroSection() {
                     <Image
                         src="/photos/Samuli.jpg"
                         alt="Samuli's Profile Picture"
-                        className="rounded-full border-4 border-orange-500 shadow-[0px_0px_12px_1px_rgba(255,215,0,1)] "
+                        className="rounded-full border-4 border-orange-500 shadow-[0px_0px_12px_1px_rgba(255,215,0,1)]  w-[150px] h-[170px] object-cover"
                         width={150}
                         height={150}
                     />
@@ -29,24 +29,22 @@ export default function HeroSection() {
                     </Link>
                 </div>
 
-                {/* Right Section (Friend's Info) */}
+                {/* Right Section (Leevi's Info) */}
                 <div className="flex flex-col items-center text-center">
                     <Image
-                        src="/photos/Leevi.jpg" 
-                        alt="Friend's Profile Picture"
-                        className="rounded-full border-4 border-orange-500 shadow-[0px_0px_12px_1px_rgba(255,215,0,1)]"
+                        src="/photos/Leevi.jpg"
+                        alt="Leevi's Profile Picture"
+                        className="rounded-full border-4 border-orange-500 shadow-[0px_0px_12px_1px_rgba(255,215,0,1)]  w-[150px] h-[170px] object-cover"
                         width={150}
                         height={150}
                     />
                     <h2 className="text-2xl font-bold mt-4">Leevi Ekdahl (Chairman)</h2>
                     <p className="text-gray-300 mt-2">Junior developer & Disciple of the Way</p>
-
                     <Link href="/leeviPortfolio">
                         <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
                             Leevi&apos;s Portfolio
-                       </button>
+                        </button>
                     </Link>
-
                 </div>
             </div>
         </header>
