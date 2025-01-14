@@ -49,7 +49,7 @@ export default function HeroSection() {
 
                     <Link href="/leeviPortfolio">
                        <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                           Friend&apos;s Portfolio
+                           testing Portfolio
                         </button>
                     </Link>
 
