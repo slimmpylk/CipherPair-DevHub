@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light/Dark Mode Colors */
+:root {
+  --primary: theme('colors.primary'); /* Maps to Tailwind's primary color */
+  --secondary: #000000; /* Maps to Tailwind's secondary color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.hero-background {
+  background-color: rgb(32, 32, 32) !important;
+  background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0) 80%,
+          rgba(0, 0, 0, 1)
+  ),
+  linear-gradient(
+          45deg,
+          black 25%,
+          transparent 25%,
+          transparent 75%,
+          black 75%,
+          black
+  ),
+  linear-gradient(
+          45deg,
+          black 25%,
+          transparent 25%,
+          transparent 75%,
+          black 75%,
+          black
+  ),
+  linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px !important;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px !important;
+}
+
+/* General Styles */
+body {
+  color: var(--primary); /* Example of using the custom property */
+  background-color: var(--secondary); /* Example of using the custom property */
+}
+.section {
+  padding: 60px 20px;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Progress Bars */
+.progress-container {
+  margin-bottom: 20px;
+}
+
+.progress-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: var(--foreground);
+  font-weight: bold;
+}
+
+.progress {
+  height: 10px;
+  background-color: #333333;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary), #e06d00);
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-container:hover .progress-bar {
+  background: linear-gradient(90deg, #e06d00, var(--primary));
+  box-shadow: 0 0 10px var(--primary), 0 0 20px #e06d00;
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 3rem;
+  color: #ff8700; /* Highlighted in orange */
+  margin-bottom: 20px; /* Space between title and image */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff8700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* Profile Photo */
+.profile-photo {
+  border-radius: 50%;
+  border: 3px solid #ff8700;
+  box-shadow: 0 0 15px rgba(255, 135, 0, 0.5);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 135, 0, 0.7);
+}
+
+/* Portfolio Cards */
+.card-portfolio {
+  border: none;
+  color: var(--foreground);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+}
+
+.card-portfolio video:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-portfolio .btn-orange {
+  background-color: var(--primary);
+  border: none;
+  color: var(--foreground);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-portfolio .btn-orange:hover {
+  background-color: #e06d00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+}

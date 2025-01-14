@@ -1,0 +1,22 @@
+.dynamicText {
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #ff8700; /* McLaren orange */
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.flashOut {
+    opacity: 0;
+    transform: scale(0.8); /* Shrinks slightly while fading out */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.flashIn {
+    opacity: 1;
+    transform: scale(1.2); /* Pops in slightly larger */
+    text-shadow: 0 0 20px #ff8700, 0 0 40px #e06d00; /* Glowing effect */
+    transition: transform 0.4s ease, opacity 0.4s ease, text-shadow 0.4s ease;
+}
