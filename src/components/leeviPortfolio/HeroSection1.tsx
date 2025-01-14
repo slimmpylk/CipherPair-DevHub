@@ -4,7 +4,7 @@ import DynamicText from "@/components/leeviPortfolio/DynamicTextForLeevi";
 export default function HeroSection1() {
     return (
         <header
-            className="
+            className=" hero-background
                     min-h-screen    // or h-screen if you want full viewport
                     flex
                     flex-col
@@ -23,12 +23,12 @@ export default function HeroSection1() {
             leading-[1.25]  /* or leading-relaxed, etc. */
           "
                 >
-                    leevi&apos;s Site
+                    Leevi&apos;s Site
                 </h1>
                 <Image
-                    src="/photos/Samuli.jpg"
+                    src="/photos/Leevi.jpg"
                     alt="Profile Picture"
-                    className="rounded-full border-4 border-orange-500 shadow-lg mb-8"
+                    className="rounded-full border-4 border-orange-500 shadow-lg mb-8 mx-auto block"
                     width={150}
                     height={150}
                 />

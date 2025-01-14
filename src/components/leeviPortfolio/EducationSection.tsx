@@ -1,22 +1,22 @@
 export default function EducationSection() {
     const education = [
         {
-            date: "2024 - Present",
-            title: "Bachelor of Cybersecurity",
+            date: "2018 - 2021",
+            title: "High school",
             description:
-                "Focusing on penetration testing, SOC, red teaming, and advanced security methodologies, with hands-on experience through Hack The Box.",
+                "Graduated with EEMCCB grades, focusing on languages and psychology.",
         },
         {
-            date: "2022 - Present",
-            title: "Bachelor of Engineering",
+            date: "2021-2022",
+            title: "Truck driver training in Finnish Air Force",
             description:
-                "Developing skills in programming and electrical engineering while engaging in collaborative projects at Oulu University of Applied Sciences.",
+                "Professional qualification in driving trucks and operating heavy machinery.",
         },
         {
-            date: "2015 - 2018",
-            title: "Hyria Vocational School",
+            date: "2022-present",
+            title: "Bachelor of Engineering in Information Technology",
             description:
-                "Trained in safety protocols, video monitoring, and customer interaction, including creating security protocols still in use today.",
+                "Currently studying at the Oulu University of Applied Sciences.",
         },
     ];
 
