@@ -1,30 +1,31 @@
 export default function ExperienceSection() {
     const experiences = [
         {
-            date: "07/2017 - 12/2021",
-            title: "Security Officer (Customer Service)",
+            date: "07/2020-01/2023",
+            title: "Driver",
             highlights: [
-                "Patrolled properties for safety.",
-                "Ensured a safe and welcoming environment in commercial properties.",
-                "Provided exceptional customer service to tenants and visitors.",
-                "Proactively managed and maintained security systems.",
-                "Prepared detailed reports to enhance operations and processes.",
+                "Delivered cars between car retail stores and/or to customers.",
                 "Responded to customer concerns with professionalism and efficiency.",
-                "Enforced security policies effectively.",
             ],
         },
         {
-            date: "09/2018 - 03/2019",
-            title: "Security Chauffeur",
+            date: "03/2021-08/2022",
+            title: "Construction worker",
             description:
-                "Transported high-ranking officials, including an Armored Brigade General and politicians, across Finland with responsibilities including:",
+                "Worked in construction sites as a general laborer.",
             highlights: [
-                "Ensuring vehicle cleanliness and maintenance.",
-                "Providing professional service to high-profile clients.",
-                "Monitoring surroundings for safety and comfort during transit.",
-                "Maintaining detailed travel logs for seamless operations.",
+
             ],
         },
+        {
+            date: "05/2023-08/2023 & 05/2024-08/2024",
+            title: "Truck Driver",
+            description:
+                "Industrial and sewage service truck driver.",
+            highlights: [
+                "Operated industrial and sewage service trucks.",
+            ],
+        }
     ];
 
     return (

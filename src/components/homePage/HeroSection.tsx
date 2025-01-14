@@ -32,25 +32,19 @@ export default function HeroSection() {
                 {/* Right Section (Friend's Info) */}
                 <div className="flex flex-col items-center text-center">
                     <Image
-                        src="/photos/Friend.jpg" // Replace this with friend's picture path
+                        src="/photos/Leevi.jpg" 
                         alt="Friend's Profile Picture"
-                        className="rounded-full border-4 border-orange-500 shadow-lg"
+                        className="rounded-full border-4 border-orange-500 shadow-[0px_0px_12px_1px_rgba(255,215,0,1)]"
                         width={150}
                         height={150}
                     />
-                    <h2 className="text-2xl font-bold mt-4">[Friends portfolio]</h2>
-                    <p className="text-gray-300 mt-2">Under Construction.</p>
+                    <h2 className="text-2xl font-bold mt-4">Leevi Ekdahl (Chairman)</h2>
+                    <p className="text-gray-300 mt-2">Junior developer & Disciple of the Way</p>
 
                     <Link href="/leeviPortfolio">
                         <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                            Friend&apos;s Portfolio
+                            Leevi&apos;s Portfolio
                        </button>
-                    </Link>
-
-                    <Link href="/leeviPortfolio">
-                       <button className="mt-4 px-6 py-2 bg-orange-500 text-white font-bold rounded hover:bg-orange-600">
-                           testing Portfolio
-                        </button>
                     </Link>
 
                 </div>

@@ -8,38 +8,15 @@ export default function PortfolioSection() {
                         <video
                             className="w-full rounded-lg"
                             controls
-                            src="/videos/ServoKaappi.mp4"
+                            src="/videos/audiospektrivalmisdemo.mp4"
                         />
                         <div className="mt-4">
                             <h3 className="text-xl font-semibold text-orange-500">Arduino Servo Safe</h3>
                             <p className="text-white mt-2">
-                                This Arduino project uses an RFID reader, a servo motor, a buzzer,
-                                an LCD display, and a 3x4 keypad to create a lock and key system.
+                                This audio visualizer project uses ESP32, microphone and OLED display to visualize sound. 
                             </p>
                             <a
-                                href="https://github.com/slimmpylk/servo-safe-arduino"
-                                className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View on GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md">
-                        <video
-                            className="w-full rounded-lg"
-                            controls
-                            src="/videos/MineSweeperData.mp4"
-                        />
-                        <div className="mt-4">
-                            <h3 className="text-xl font-semibold text-orange-500">MineSweeper_AI</h3>
-                            <p className="text-white mt-2">
-                                BombSquadron is a robust AI capable of consistently solving Minesweeper puzzles.
-                            </p>
-                            <a
-                                href="https://github.com/slimmpylk/Minesweeper_AI_BombSquadron"
+                                href="https://github.com/leeviekd/ESP32-audio-visualizer"
                                 className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
                                 target="_blank"
                                 rel="noopener noreferrer"
