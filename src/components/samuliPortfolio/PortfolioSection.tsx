@@ -70,6 +70,48 @@ export default function PortfolioSection() {
                             </a>
                         </div>
                     </div>
+                    <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md">
+                        <video
+                            className="w-full h-48 rounded-lg object-contain"
+                            controls
+                            src="/videos/GlowPulseApp.mp4"
+                        />
+                        <div className="mt-4">
+                            <h3 className="text-xl font-semibold text-orange-500">GlowPulseApp</h3>
+                            <p className="text-white mt-2">
+                                GlowPulseApp is a mobile application that integrates with a Raspberry Pi server to monitor heart rate in real-time and control an SPI-controlled LED strip.
+                            </p>
+                            <a
+                                href="https://github.com/slimmpylk/GlowPulseApp"
+                                className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                More detailed on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md">
+                        <video
+                            className="w-full h-48 rounded-lg object-contain"
+                            controls
+                            src="/videos/GlowPulseinUse.mp4"
+                        />
+                        <div className="mt-4">
+                            <h3 className="text-xl font-semibold text-orange-500">GlowPulse in use</h3>
+                            <p className="text-white mt-2">
+                                PulseGlow idea was, how to be visible in the most coolest way possible when running, cycling or doing whatever in the dark roads. Now cars can see you like &#34;that guy is doing ZONE 2 training, woooahh!!!&#34;
+                            </p>
+                            <a
+                                href="https://github.com/slimmpylk/PulseGlow"
+                                className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-700"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                More detailed on GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

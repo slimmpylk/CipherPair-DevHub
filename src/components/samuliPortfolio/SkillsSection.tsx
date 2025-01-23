@@ -3,11 +3,11 @@ import SkillBar from "@/components/common/SkillBar";
 export default function SkillsSection() {
     const skills = [
         { skill: "Office 365", level: 90 },
-        { skill: ".NET", level: 40 },
-        { skill: "C/C++", level: 50 },
+        { skill: ".NET", level: 20 },
+        { skill: "C/C++", level: 30 },
         { skill: "Frontend (HTML, CSS, JS, TS)", level: 60 },
-        { skill: "Python", level: 55 },
-        { skill: "SQL", level: 40 },
+        { skill: "Python", level: 40 },
+        { skill: "SQL", level: 20 },
         { skill: "Linux", level: 65 },
     ];
 
