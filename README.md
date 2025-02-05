@@ -5,6 +5,9 @@ CipherPair-DevHub
 🚀 Welcome to CipherPair-DevHub – a collaborative portfolio platform for developers with a unique, modern twist! This homemade project is a work-in-progress and will evolve into something extraordinary.
 Project Overview
 
+## New Feature Added
+VPS server now has CronJob so it will automatically fetch/update the Strava stats and now the user dont have to wait that to happen so everything is already fetched and downloaded in to the cache.
+
 This website is designed to highlight the skills and projects of two creative minds, showcasing individual portfolios while combining them into a unified, visually stunning experience.
 ✨ Features
 
@@ -13,15 +16,6 @@ This website is designed to highlight the skills and projects of two creative mi
     Sleek Navigation: Smooth transitions between pages for seamless browsing.
     Responsive Design: Fully optimized for both desktop and mobile screens.
     Collaboration Focus: A shared theme to highlight teamwork and collaboration.
-
-Current Progress
-
-🚧 This project is still under development, but here’s what’s done so far:
-
-    Homepage: A dynamic selection page where users can explore portfolios.
-    Portfolio Pages: Separate pages for each developer, showcasing skills, education, and experience.
-    Dynamic REST API Integration: Fetches live data (e.g., workout stats from Strava REST API).
-    Deployment: Hosted on a VPS server with DigitalOcean and linked to the custom domain cipherpair.com.
 
 Deployment Setup
 
