@@ -20,7 +20,10 @@ async function fetchLatestWorkout(): Promise<Workout | null> {
     try {
         const response = await fetch(
             "https://strava-rest-api-f6acfrawc0bbg7a2.northeurope-01.azurewebsites.net/api/strava/latest-workout",
-            { cache: "no-store" }
+            {
+                // Revalidate every 3 hours to make site load faster.
+                next: { revalidate: 5 * 60 * 60 },
+            }
         );
         if (!response.ok) throw new Error("Failed to fetch latest workout");
         const data = await response.json();
@@ -36,7 +39,11 @@ async function fetchWeeklySummary(): Promise<WeeklySummary | null> {
     try {
         const response = await fetch(
             "https://strava-rest-api-f6acfrawc0bbg7a2.northeurope-01.azurewebsites.net/api/strava/last-week-summary",
-            { cache: "no-store" }
+            {
+                // Let Next.js cache this response
+                // Revalidate every 60 seconds (or whatever interval you need)
+                next: { revalidate: 3 * 60 * 60 },
+            }
         );
         if (!response.ok) throw new Error("Failed to fetch weekly summary");
         const data = await response.json();
@@ -123,5 +130,4 @@ const StravaStats = async () => {
     );
 };
 
-export const dynamic = "force-dynamic"; // Ensure dynamic rendering
 export default StravaStats;

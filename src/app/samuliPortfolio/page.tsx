@@ -7,7 +7,6 @@ import EducationSection from "@/components/samuliPortfolio/EducationSection";
 import FooterSection from "@/components/samuliPortfolio/FooterSection";
 import StravaStats from "@/components/samuliPortfolio/StravaStats";
 
-export const dynamic = "force-dynamic"; // Ensure this page is fully dynamic
 
 export default async function PortfolioPage() {
     return (
