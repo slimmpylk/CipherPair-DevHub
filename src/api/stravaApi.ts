@@ -28,7 +28,7 @@ export async function fetchLatestWorkout(): Promise<Workout | null> {
     try {
         // Revalidate every 5 hours (if you still want Next.js caching)
         const response = await fetch(`${stravaBaseUrl}/latest-workout`, {
-            next: { revalidate: 20 },
+            next: { revalidate: 3 * 60 * 60 },
         });
 
         if (!response.ok) {
@@ -51,7 +51,7 @@ export async function fetchWeeklySummary(): Promise<WeeklySummary | null> {
     try {
         // Revalidate every 3 hours (or whichever time you had)
         const response = await fetch(`${stravaBaseUrl}/last-week-summary`, {
-            next: { revalidate: 20 },
+            next: { revalidate: 3 * 60 * 60 },
         });
 
         if (!response.ok) {
