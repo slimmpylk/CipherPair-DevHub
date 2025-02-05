@@ -1,61 +1,9 @@
 import React from "react";
-
-type Workout = {
-    name: string;
-    distance: string;
-    movingTime: string;
-    totalElevationGain: string;
-    type: string;
-    date: string;
-};
-
-type WeeklySummary = {
-    totalDistance: string;
-    totalTime: string;
-    totalElevationGain: string;
-};
-
-// Fetch the latest workout data
-async function fetchLatestWorkout(): Promise<Workout | null> {
-    try {
-        const response = await fetch(
-            "https://strava-rest-api-f6acfrawc0bbg7a2.northeurope-01.azurewebsites.net/api/strava/latest-workout",
-            {
-                // Revalidate every 3 hours to make site load faster.
-                next: { revalidate: 5 * 60 * 60 },
-            }
-        );
-        if (!response.ok) throw new Error("Failed to fetch latest workout");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching latest workout:", error);
-        return null;
-    }
-}
-
-// Fetch the weekly summary data
-async function fetchWeeklySummary(): Promise<WeeklySummary | null> {
-    try {
-        const response = await fetch(
-            "https://strava-rest-api-f6acfrawc0bbg7a2.northeurope-01.azurewebsites.net/api/strava/last-week-summary",
-            {
-                // Let Next.js cache this response
-                // Revalidate every 60 seconds (or whatever interval you need)
-                next: { revalidate: 3 * 60 * 60 },
-            }
-        );
-        if (!response.ok) throw new Error("Failed to fetch weekly summary");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching weekly summary:", error);
-        return null;
-    }
-}
+import { fetchLatestWorkout, fetchWeeklySummary } from "@/api/stravaApi";
+// Or adjust the import path to match your file structure
 
 const StravaStats = async () => {
-    // Fetch data on the server
+    // 1. Fetch data on the server
     const [latestWorkout, weeklySummary] = await Promise.all([
         fetchLatestWorkout(),
         fetchWeeklySummary(),
@@ -83,7 +31,12 @@ const StravaStats = async () => {
                 <div className="flex flex-col md:flex-row md:gap-6 justify-center">
                     {/* Latest Workout Card */}
                     <div className="card-portfolio bg-gray-800 p-4 rounded-lg shadow-md flex-1">
-                        <div> <h3 className="text-xl font-semibold text-orange-500">Latest Workout:</h3> <p>{latestWorkout.date}</p></div>
+                        <div>
+                            <h3 className="text-xl font-semibold text-orange-500">
+                                Latest Workout:
+                            </h3>
+                            <p>{latestWorkout.date}</p>
+                        </div>
                         <p className="text-white mt-2">
                             <strong>Name:</strong> {latestWorkout.name}
                         </p>
